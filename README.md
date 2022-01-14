@@ -65,6 +65,8 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_id_network"></a> [id\_network](#output\_id\_network) | Unique ID of the network |
+| <a name="output_id_subnet"></a> [id\_subnet](#output\_id\_subnet) | ID of the Network subnet |
 | <a name="output_ip_range_network"></a> [ip\_range\_network](#output\_ip\_range\_network) | IPv4 Prefix of the whole Network |
 | <a name="output_ip_range_subnet"></a> [ip\_range\_subnet](#output\_ip\_range\_subnet) | Range to allocate IPs from |
 | <a name="output_name"></a> [name](#output\_name) | Name of the network |
