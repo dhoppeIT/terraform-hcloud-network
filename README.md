@@ -11,7 +11,7 @@ Terraform module to manage the Hetzner Cloud resources (hcloud_network, hcloud_n
 Copy and paste into your Terraform configuration, insert the variables and run ```terraform init```:
 
 ```hcl
-module "FIXME" {
+module "hcloud-network" {
   source = "dhoppeIT/network/hcloud"
 
   name             = "private"
