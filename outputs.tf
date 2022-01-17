@@ -15,10 +15,10 @@ output "ip_range_network" {
 
 output "id_subnet" {
   description = "ID of the Network subnet"
-  value       = hcloud_network_subnet.default.*.id
+  value       = [for subnet in hcloud_network_subnet.default : subnet.id]
 }
 
 output "ip_range_subnet" {
   description = "Range to allocate IPs from"
-  value       = hcloud_network_subnet.default.*.ip_range
+  value       = [for subnet in hcloud_network_subnet.default : subnet.ip_range]
 }

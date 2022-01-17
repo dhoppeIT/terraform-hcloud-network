@@ -6,11 +6,11 @@ resource "hcloud_network" "default" {
 }
 
 resource "hcloud_network_subnet" "default" {
-  count = var.create_network_subnet ? 1 : 0
+  for_each = toset(var.ip_range_subnet)
 
   network_id   = hcloud_network.default.id
   type         = var.type
-  ip_range     = var.ip_range_subnet
+  ip_range     = each.value
   network_zone = var.network_zone
   vswitch_id   = var.vswitch_id
 }
