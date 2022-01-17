@@ -4,7 +4,7 @@ Terraform module to manage the Hetzner Cloud resources (hcloud_network, hcloud_n
 
 ## Graph
 
-![Graph](https://github.com/dhoppeIT/terraform-hcloud-network/blob/main/rover.png)
+<img alt="Graph" src="https://github.com/dhoppeIT/terraform-hcloud-network/blob/main/rover.svg?raw=true" width="100%" height="100%">
 
 ## Usage
 
