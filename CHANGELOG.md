@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/dhoppeIT/terraform-hcloud-network/compare/v0.2.0...v0.3.0) (2022-01-17)
+
+
+### Features
+
+* Add support for multiple network subnets ([#9](https://github.com/dhoppeIT/terraform-hcloud-network/issues/9)) ([71a1abf](https://github.com/dhoppeIT/terraform-hcloud-network/commit/71a1abfd8edbf260cb4a118ceb6ec11dda21073f))
+
 ## [0.2.0](https://github.com/dhoppeIT/terraform-hcloud-network/compare/v0.1.1...v0.2.0) (2022-01-17)
 
 
