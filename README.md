@@ -10,6 +10,19 @@ Terraform module to manage the Hetzner Cloud resources (hcloud_network, hcloud_n
 
 Copy and paste into your Terraform configuration, insert the variables and run ```terraform init```:
 
+**Create a network:**
+
+```hcl
+module "hcloud-network" {
+  source = "dhoppeIT/network/hcloud"
+
+  name             = "private"
+  ip_range_network = "10.0.0.0/16"
+}
+```
+
+**Create a network subnet:**
+
 ```hcl
 module "hcloud-network" {
   source = "dhoppeIT/network/hcloud"
@@ -17,9 +30,10 @@ module "hcloud-network" {
   name             = "private"
   ip_range_network = "10.0.0.0/16"
 
-  type            = "cloud"
-  ip_range_subnet = "10.0.0.0/24"
-  network_zone    = "eu-central"
+  create_network_subnet = true
+  type                  = "cloud"
+  ip_range_subnet       = "10.0.0.0/24"
+  network_zone          = "eu-central"
 }
 ```
 
@@ -52,13 +66,14 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_create_network_subnet"></a> [create\_network\_subnet](#input\_create\_network\_subnet) | Whether to create network subnet | `bool` | `false` | no |
 | <a name="input_delete_protection"></a> [delete\_protection](#input\_delete\_protection) | Enable or disable delete protection | `bool` | `false` | no |
 | <a name="input_ip_range_network"></a> [ip\_range\_network](#input\_ip\_range\_network) | IP Range of the whole Network which must span all included subnets and route destinations | `string` | n/a | yes |
-| <a name="input_ip_range_subnet"></a> [ip\_range\_subnet](#input\_ip\_range\_subnet) | Range to allocate IPs from | `string` | n/a | yes |
+| <a name="input_ip_range_subnet"></a> [ip\_range\_subnet](#input\_ip\_range\_subnet) | Range to allocate IPs from | `string` | `null` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | User-defined labels (key-value pairs) should be created with | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the Network to create | `string` | n/a | yes |
-| <a name="input_network_zone"></a> [network\_zone](#input\_network\_zone) | Name of network zone | `string` | n/a | yes |
-| <a name="input_type"></a> [type](#input\_type) | Type of subnet | `string` | n/a | yes |
+| <a name="input_network_zone"></a> [network\_zone](#input\_network\_zone) | Name of network zone | `string` | `null` | no |
+| <a name="input_type"></a> [type](#input\_type) | Type of subnet | `string` | `null` | no |
 | <a name="input_vswitch_id"></a> [vswitch\_id](#input\_vswitch\_id) | ID of the vswitch | `number` | `null` | no |
 
 ## Outputs

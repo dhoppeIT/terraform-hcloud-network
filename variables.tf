@@ -20,18 +20,27 @@ variable "delete_protection" {
   description = "Enable or disable delete protection"
 }
 
+variable "create_network_subnet" {
+  type        = bool
+  default     = false
+  description = "Whether to create network subnet"
+}
+
 variable "type" {
   type        = string
+  default     = null
   description = "Type of subnet"
 }
 
 variable "ip_range_subnet" {
   type        = string
+  default     = null
   description = "Range to allocate IPs from"
 }
 
 variable "network_zone" {
   type        = string
+  default     = null
   description = "Name of network zone"
 }
 
