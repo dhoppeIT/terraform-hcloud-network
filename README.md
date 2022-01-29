@@ -13,7 +13,7 @@ Copy and paste into your Terraform configuration, insert the variables and run `
 **Create one network subnet:**
 
 ```hcl
-module "hcloud-network" {
+module "hcloud_network" {
   source = "dhoppeIT/network/hcloud"
 
   name             = "private"
@@ -28,7 +28,7 @@ module "hcloud-network" {
 **Create multiple network subnets:**
 
 ```hcl
-module "hcloud-network" {
+module "hcloud_network" {
   source = "dhoppeIT/network/hcloud"
 
   name             = "private"
