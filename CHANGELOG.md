@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.1](https://github.com/dhoppeIT/terraform-hcloud-network/compare/v0.3.0...v0.3.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* Allow new minor releases ([#17](https://github.com/dhoppeIT/terraform-hcloud-network/issues/17)) ([98f5d3e](https://github.com/dhoppeIT/terraform-hcloud-network/commit/98f5d3eb373c87612a40733587f5fc05fd53a2ff))
+
 ## [0.3.0](https://github.com/dhoppeIT/terraform-hcloud-network/compare/v0.2.0...v0.3.0) (2022-01-17)
 
 
