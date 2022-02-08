@@ -1,7 +1,7 @@
 ---
 repository:
   name: terraform-hcloud-network
-  description: Terraform module to manage the Hetzner Cloud resources (hcloud_network, hcloud_network_subnet)
+  description: Terraform module to manage the following Hetzner Cloud resources (hcloud_network, hcloud_network_subnet)
   homepage: https://registry.terraform.io/modules/dhoppeIT/server_network/hcloud/latest
   topics: terraform, hcloud, network, network-subnet
   private: false
@@ -64,7 +64,7 @@ branches:
         dismiss_stale_reviews: true
       required_status_checks:
         strict: true
-        contexts: ["Validate Terraform"]
+        contexts: []
       enforce_admins: null
       required_linear_history: true
       restrictions: null
