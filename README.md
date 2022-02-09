@@ -13,8 +13,6 @@ Terraform module to manage the following Hetzner Cloud resources:
 
 Copy and paste into your Terraform configuration, insert the variables and run ```terraform init```:
 
-**Create one network subnet:**
-
 ```hcl
 module "hcloud_network" {
   source  = "dhoppeIT/network/hcloud"
@@ -25,26 +23,6 @@ module "hcloud_network" {
 
   type            = "cloud"
   ip_range_subnet = ["10.0.0.0/24"]
-  network_zone    = "eu-central"
-}
-```
-
-**Create multiple network subnets:**
-
-```hcl
-module "hcloud_network" {
-  source  = "dhoppeIT/network/hcloud"
-  version = "~> 0.3"
-
-  name             = "private"
-  ip_range_network = "10.0.0.0/16"
-
-  type            = "cloud"
-  ip_range_subnet = [
-    "10.0.10.0/24",
-    "10.0.20.0/24",
-    "10.0.30.0/24"
-  ]
   network_zone    = "eu-central"
 }
 ```
