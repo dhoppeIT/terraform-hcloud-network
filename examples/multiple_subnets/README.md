@@ -56,7 +56,6 @@ No resources.
 | <a name="output_network_name"></a> [network\_name](#output\_network\_name) | Name of the network |
 | <a name="output_subnet_id"></a> [subnet\_id](#output\_subnet\_id) | ID of the Network subnet |
 | <a name="output_subnet_ip_range"></a> [subnet\_ip\_range](#output\_subnet\_ip\_range) | Range to allocate IPs from |
-
 <!-- END_TF_DOCS -->
 
 ## Authors

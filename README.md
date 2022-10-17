@@ -39,7 +39,7 @@ module "hcloud_network" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.33.1 |
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.35.2 |
 
 ## Modules
 
@@ -74,7 +74,6 @@ No modules.
 | <a name="output_ip_range_network"></a> [ip\_range\_network](#output\_ip\_range\_network) | IPv4 Prefix of the whole Network |
 | <a name="output_ip_range_subnet"></a> [ip\_range\_subnet](#output\_ip\_range\_subnet) | Range to allocate IPs from |
 | <a name="output_name"></a> [name](#output\_name) | Name of the network |
-
 <!-- END_TF_DOCS -->
 
 ## Authors
